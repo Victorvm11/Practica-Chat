@@ -101,7 +101,7 @@ class Chat extends React.Component{
 
           <div className='borde'>
             <div className='scroll'>
-        <h2 className='mensaje'>Mensaje</h2><div id='cuadro_texto'>{this.state.comentarios.map(mostrar=>(<li id='lista' key={mostrar.NumeroMensaje}><b>{mostrar.Usuario}:</b>{mostrar.Mensaje}</li>))}</div>
+        <h2 className='mensaje'>Mensajes</h2><div id='cuadro_texto'>{this.state.comentarios.map(mostrar=>(<li id='lista' key={mostrar.NumeroMensaje}><b>{mostrar.Usuario}:</b>{mostrar.Mensaje}</li>))}</div>
         </div>
         <div className='borde1'></div>
         <div className='espacio'>
