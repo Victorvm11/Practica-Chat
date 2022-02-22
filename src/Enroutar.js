@@ -1,8 +1,7 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Chat from './Chat'
+import Chat from './App'
 import Login from './Login'
  
  
@@ -11,9 +10,8 @@ export default function App(){
   <BrowserRouter>
       <Routes>
         <Route path="/" element={<Chat />} />
-        <Route path="Inicia" element={<Login />} />
-        <Route path='/Chat' element={<Chat />} />
-        
+        <Route path="login" element={<Login />} >
+        </Route>
     </Routes>
   </BrowserRouter>
   )
